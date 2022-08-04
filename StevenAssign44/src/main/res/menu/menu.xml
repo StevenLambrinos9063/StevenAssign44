@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Steven Lambrinos N01429063-->
+
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/eshanHelp"
+        android:id="@+id/stevenHelp"
         android:icon="@drawable/help"
         android:title="@string/menu_help"
         app:showAsAction="always" />
     <item
-        android:id="@+id/eshanSettings"
+        android:id="@+id/stevenSettings"
         android:icon="@drawable/settings"
         android:title="@string/menu_settings"
         app:showAsAction="always" />
     <item
-        android:id="@+id/eshanHome"
+        android:id="@+id/stevenHome"
         android:icon="@drawable/home"
         android:title="@string/menu_home"
         app:showAsAction="ifRoom" />
