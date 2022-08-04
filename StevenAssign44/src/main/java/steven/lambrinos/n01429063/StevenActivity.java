@@ -24,7 +24,7 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
-public class StevenActivity extends AppCompatActivity {
+public class StevenActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
@@ -46,7 +46,6 @@ public class StevenActivity extends AppCompatActivity {
         if (this.steven_home == null) this.steven_home = StevenHome.newInstance();
     startTransactionFragment(this.steven_home);
 }
-
     @Override
     public void onBackPressed() {
         if (this.drawerLayout.isDrawerOpen(GravityCompat.START)) {
@@ -80,7 +79,6 @@ public class StevenActivity extends AppCompatActivity {
                 Snackbar snackbar = Snackbar.make(drawerView, R.string.snackbar, Snackbar.LENGTH_SHORT);
                 snackbar.show();
             }
-
             @Override
             public void onDrawerClosed(@NonNull View drawerView) {
                 Toast toast = Toast.makeText(getApplicationContext(), R.string.toast, Toast.LENGTH_SHORT);
@@ -90,12 +88,10 @@ public class StevenActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
     }
-
     private void configureToolBar() {
         this.toolbar = (Toolbar) findViewById(R.id.steven_main_toolbar);
         setSupportActionBar(toolbar);
     }
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
@@ -110,11 +106,11 @@ public class StevenActivity extends AppCompatActivity {
                     this.lambrinos_download = LambrinosDownload.newInstance();
                 startTransactionFragment(this.lambrinos_download);
                 break;
-            case R.id.weather:
-                if (this.n01429063_weather == null)
-                    this.n01429063_weather = N01429063Weather.newInstance();
-                startTransactionFragment(this.n01429063_weather);
-                break;
+//            case R.id.weather:
+//                if (this.n01429063_weather == null)
+//                    this.n01429063_weather = N01429063Weather.newInstance();
+//                startTransactionFragment(this.n01429063_weather);
+//                break;
             case R.id.steven_fileContent:
                 if (this.steven_file == null) this.steven_file = StevenFileContent.newInstance();
                 startTransactionFragment(this.steven_file);
@@ -137,14 +133,12 @@ public class StevenActivity extends AppCompatActivity {
                     .replace(R.id.steven_main_frame_layout, fragment).commit();
         }
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         return true;
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -164,6 +158,6 @@ public class StevenActivity extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
-    }
-}
-}
+    }}
+
+
