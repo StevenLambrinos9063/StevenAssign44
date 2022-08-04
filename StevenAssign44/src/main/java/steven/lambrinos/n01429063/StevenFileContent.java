@@ -89,7 +89,7 @@ public class StevenFileContent extends Fragment {
             }
         });
 
-        btnDelete = (Button) view.findViewById(R.id.eshan_btnDelete);
+        btnDelete = (Button) view.findViewById(R.id.steven_btnDelete);
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
