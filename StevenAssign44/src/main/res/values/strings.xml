@@ -52,4 +52,6 @@
     <string name="humidityJSON">humidity</string>
     <string name="sysJSON">sys</string>
     <string name="countryJSON">country</string>
+    <string name="Lon"><![CDATA[<![CDATA[&lon=]]></string>
+    <string name="Key"><![CDATA[<![CDATA[&appid=31e353c9591288905191fec175774a70]]></string>
 </resources>
