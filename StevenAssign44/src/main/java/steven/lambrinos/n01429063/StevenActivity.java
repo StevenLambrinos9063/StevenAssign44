@@ -1,10 +1,11 @@
+//Steven Lambrinos N01429063 RNA
 package steven.lambrinos.n01429063;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class StevenActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
