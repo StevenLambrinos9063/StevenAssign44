@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Steven Lambrinos N01429063-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/steven_frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Green"
+    tools:context=".N01429063Weather">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/steven_textView3"
+        android:layout_width="88dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="162dp"
+        android:text="@string/Steven"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/steven_simpleSpinner"
+        android:layout_width="124dp"
+        android:layout_height="31dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="171dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="689dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displayWeather"
+        android:layout_width="255dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="78dp"
+        android:text="@string/textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
